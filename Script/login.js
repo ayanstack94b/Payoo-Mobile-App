@@ -7,7 +7,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   console.log(contactNum, "the pin is", pinValue);
 
   if (contactNum == "7980441957" && pinValue == "1234") {
-    alert("login success");
+    // alert("login success");
     window.location.assign("/home.html");
   } else {
     alert("wrong credentials");
