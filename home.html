@@ -85,8 +85,47 @@
         </div>
     </section>
 
+    <!-- select bank hidden section -->
+
+    <section id="add-money" class="w-11/12 mx-auto py-5">
+        <h2 class="text-xl font-bold mb-5">Add Money</h2>
+        <div class="from">
+            <div class="card bg-base-100 w-full max-w-sm shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-bold">Select Bank</label>
+                        <select class="select w-full bg-base-200 rounded-full" id="add-money-bank">
+                            <option disabled selected>Select a Bank</option>
+                            <option>HDFC</option>
+                            <option>SBI</option>
+                            <option>HSBC</option>
+                        </select> <br>
+                        <label class="label text-neutral font-bold">Bank Account Number</label>
+                        <input id="add-money-num" maxlength="11" minlength="11" type="text"
+                            class="input w-full rounded-full bg-base-200" value="11111111111"
+                            placeholder="Enter Bank A/C number" />
+                        <br>
+
+                        <label class="label text-neutral font-bold">Amount to Add</label>
+                        <input id="add-money-amount" maxlength="11" minlength="11" type="number"
+                            class="input w-full rounded-full bg-base-200" value="" placeholder="Enter amount to Add" />
+                        <br>
+
+                        <label class="label text-neutral font-bold">Pin Number</label>
+                        <input id="add-money-pin" maxlength="4" minlength="4" type="password"
+                            class="input w-full rounded-full bg-base-200" value="1234"
+                            placeholder="Enter 4 digit pin number" />
+                        <br>
+
+                        <button id="add-money-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- form -->
-    <section id="cashOut" class="w-11/12 mx-auto py-5">
+    <section id="cashOut" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-boldv mb-5">Cashout</h2>
         <div class="from">
             <div class="card bg-base-100 w-full max-w-sm shadow rounded-2xl">
@@ -94,7 +133,7 @@
                     <fieldset class="fieldset">
                         <label class="label text-neutral font-bold">Agent Number</label>
                         <input id="cashOut-num" maxlength="11" minlength="11" type="text"
-                            class="input w-full rounded-full bg-base-200" value="7980441957"
+                            class="input w-full rounded-full bg-base-200" value="11111111111"
                             placeholder="Enter 11 digit number" />
                         <br>
 
@@ -119,6 +158,8 @@
 
     <!-- linked js -->
     <script src="/Script/cashout.js"></script>
+    <script src="/Script/mechine.js"></script>
+    <script src="/Script/addMoney.js"></script>
 </body>
 
 </html>
